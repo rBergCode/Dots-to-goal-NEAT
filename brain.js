@@ -14,8 +14,8 @@ class Brain {
 
     clone() {
         let clone = new Brain(this.directions.length);
-        for (const direction of this.directions) {
-            clone.directions.push(direction.copy());
+        for (const i in this.directions) {
+            clone.directions[i] = this.directions[i].copy();
         }
         return clone;
     }

@@ -92,8 +92,9 @@ class Population {
 
         this.bestDot = maxIndex;
 
-        if (this.bestDot.reachGoal) {
-            this.minStep = this.bestDot.brain.step;
+        if (this.dots[this.bestDot].reachGoal) {
+            this.minStep = this.dots[this.bestDot].brain.step;
+            console.log(this.minStep);
         }
     }
 }
